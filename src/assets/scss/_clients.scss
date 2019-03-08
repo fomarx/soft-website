@@ -1,0 +1,26 @@
+@import "./base.scss";
+// Powered Section
+.powered {
+  // background-color: rgba(222, 255, 255, 0.6);
+  color: $secondary-color;
+  padding: 1rem 0;
+
+  // ↓↓ this transfers to => .powered__logos
+  &__logos {
+    margin-top: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // when using flex-wrap we wont need to write @media
+    // most of the time, 'cause the content
+    // will adjust automatically
+    flex-wrap: wrap;
+
+    // ↓↓ transfers to => .powered__logos > *
+    // wicth they're the imgs inside it
+    & > * {
+      width: 8rem;
+      margin: 1rem 1.25rem;
+    }
+  }
+}

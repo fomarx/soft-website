@@ -1,0 +1,44 @@
+@import "./base.scss";
+#apppage .gradient {
+  background: -moz-linear-gradient(45deg, $primary-color, $secondary-color);
+  background: -webkit-linear-gradient(45deg, $primary-color, $secondary-color);
+  background: -webkit-gradient(
+    linear,
+    45deg,
+    from($primary-color, to($secondary-color))
+  );
+  background: -o-linear-gradient(45deg, $primary-color, $secondary-color);
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+}
+#apppage .view {
+  /* background-image: url("https://images.pexels.com/photos/935869/pexels-photo-935869.jpeg?cs=srgb&dl=aerial-aerial-view-application-935869.jpg&fm=jpg"); */
+  // background-image: url("https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  // background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+#apppage h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 3s ease-in-out;
+}
+#apppage a {
+  color: white;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+a :hover {
+  color: $primary-color;
+  :active {
+    color: $secondary-color;
+  }
+}
+
+#apppage h5 {
+  line-height: 1.5;
+  color: $primary-color;
+  font-weight: bold;
+}

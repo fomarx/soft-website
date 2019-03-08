@@ -1,0 +1,13 @@
+@import "./base.scss";
+
+.four-point-star-primary::before {
+  color: #1c2a48;
+  content: "\2726";
+  font-size: 8rem;
+}
+
+.four-point-star-second::before {
+  color: #ffc75f;
+  content: "\2726";
+  font-size: 6rem;
+}
